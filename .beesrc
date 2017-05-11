@@ -1,0 +1,28 @@
+{
+  "use": "vue",
+  "entry": "src/index.ts",
+  "style": ["css", "less"],
+  "publicPath": "/",
+  "disableCSSModules": false,
+  "imgCompress": true,
+  "autoprefixer": null,
+  "externals": [],
+  "multipage": true,
+  "define": null,
+  "proxy": {
+    "/api": {
+      "target": "http://jsonplaceholder.typicode.com/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  },
+  "env": {
+    "development": {
+      "cssSourceMap": false
+    },
+    "production": {
+      "cssSourceMap": true,
+      "analyze": true
+    }
+  }
+}

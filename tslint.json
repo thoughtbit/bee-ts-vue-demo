@@ -1,0 +1,19 @@
+{
+	"defaultSeverity": "error",
+	"extends": [
+		"tslint:recommended"
+	],
+	"rules": {
+    "semi": [2, "always"],
+		"quotemark": [
+			true,
+			"single"
+		],
+		"interface-name": [
+			false
+		],
+		"arrow-parens": false,
+		"object-literal-sort-keys": false
+	},
+	"rulesDirectory": []
+}

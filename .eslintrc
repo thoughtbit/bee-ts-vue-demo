@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true,
+    "browser": true
+  },
+  "extends": "airbnb-base",
+  // required to lint *.vue files
+  "plugins": [
+    "html",
+    "import"
+  ],
+  // add your custom rules here
+  "rules": {
+    "no-console": [0],
+    "no-unused-vars": [0],
+    "semi": [2, "always"],
+    "indent": [2, 2, { "SwitchCase": 1 }],  // 2空格缩进，Switch case有缩进
+    "no-multiple-empty-lines": [2, { "max": 2 }],     // 最多两行空行，少了不够，多了没用
+    "space-before-function-paren": [0, "always"],     // 不关心函数括号前是否有空格
+    "comma-dangle": [2, "only-multiline"],            // 只有多行的时候才允许尾部的多余逗号
+    // don‘t require .vue extension when importing
+    "import/extensions": [0, "always", {
+      "js": "never",
+      "jsx": "never",
+      "vue": "never"
+    }],
+    "import/no-unresolved": [0]
+  }
+}
